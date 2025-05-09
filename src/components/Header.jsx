@@ -6,7 +6,7 @@ const Header = () => {
       <nav className="mx-width grid:4">
         <div className="hidden">
           <a className="h4 nav-link" href="/" id="home">
-            Name
+            Kirti Shreyaa
           </a>
         </div>
         <div></div>
