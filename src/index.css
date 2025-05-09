@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@font-face {
+  font-family: ENDisplay;
+  font-weight: 400;
+  font-display: block;
+  src: url(./public/font/ENH.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Casanova;
+  font-weight: 400;
+  font-style: normal;
+  src: url(./public/font/Rayleighglamor.otf);
+}
+
+@font-face {
+  font-family: Geist;
+  font-weight: 400;
+  font-style: normal;
+  src: url(./public/font/Geist.woff2) format("woff2");
+}
+
+:root {
+  --ff-h: "ENDisplay", "Times New Roman", "Times", serif;
+  --ff-p: "Outfit", Helvetica, Arial, sans-serif;
+  --font-5: 6rem;
+  --font-4: 3rem;
+  --font-3: 2rem;
+  --font-2: 1.125rem;
+  --font-0: 1rem;
+  --font-s1: 0.8rem;
+  --font-s2: 0.625rem;
+  --display: clamp(5.25rem, -1.13rem + 13vw, 9.5rem);
+  --h1: clamp(var(--font-4), 1rem + 6vw, var(--font-5));
+  --h2: clamp(var(--font-3), 0.5rem + 3vw, var(--font-4));
+  --h3: clamp(var(--font-2), 0.5rem + 2vw, var(--font-3));
+  --lh-s2: 0.8;
+  --lh-s1: 1.2;
+  --lh: 1.6;
+  --space-s3: 0.25rem;
+  --space-s2: 0.5rem;
+  --space-s1: 0.75rem;
+  --space-0: 1rem;
+  --space-1: 1.5rem;
+  --space-2: 2rem;
+  --space-3: 4rem;
+  --space-4: 8rem;
+  --space-5: 10rem;
+  --header-block-size: 3rem;
+  --purple: #7e61bb;
+  --blue: #6796d4;
+  --mint: #7ac0ad;
+  --violet: #c094d4;
+  --green: #c3db92;
+  --pink: #f28eb7;
+  --yellow: #f7b579;
+  --red: #fc9696;
+  --orange: #ffa58f;
+  --gradient-main: linear-gradient(69deg, var(--yellow), var(--red), var(--blue));
+  --gradient-1: linear-gradient(to bottom, var(--orange), var(--pink));
+  --gradient-2: linear-gradient(to bottom, var(--mint), var(--green));
+  --gradient-3: linear-gradient(to bottom, var(--purple), var(--blue));
+  --gradient-4: linear-gradient(to bottom, var(--red), var(--yellow));
+  --fg: #0c0c0c;
+  --text: #101010;
+  --gray-50: gray;
+  --bg: #fcfaf8;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  font-weight: unset;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--fg) #80808020;
+  background-color: var(--bg);
+  font: 350 var(--font-0) / var(--lh) var(--ff-p);
+  letter-spacing: -0.02em;
+  color: var(--text);
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-padding-block-start: calc(var(--header-block-size) + 5vh);
+}
+
+body {
+  background: var(--bg);
+  min-block-size: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  z-index: 1;
+  background: var(--bg);
+  border-bottom-left-radius: clamp(var(--space-2), -1rem + 6vw, var(--space-3));
+  border-bottom-right-radius: clamp(var(--space-2), -1rem + 6vw, var(--space-3));
+  min-block-size: 100vh;
+  padding-block-end: 25vh;
+  position: relative;
+}
