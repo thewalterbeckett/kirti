@@ -24,7 +24,7 @@ const Main = () => {
       <section className="cover gsap relative home">
         <div></div>
         <div className="mx-width relative" id="home__splash">
-          <div className="name">Kirti Shreyaa</div>
+          <div className="name">Name</div>
           <div className="center absolut-vodka">
             <Helix />
             <div className="mx-width stack:m">
