@@ -294,7 +294,7 @@ a[class*="nav-link"]:hover:before {
 }
 
 .grid\:2 {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
 }
 
 .grid\:5 {
@@ -302,7 +302,7 @@ a[class*="nav-link"]:hover:before {
 }
 
 @container grid (width<75ch) {
-  [class*="grid"] {
+  [class*="grid"]:not(#nav-bottom > *) {
     grid-template-columns: 1fr;
   }
 
@@ -567,6 +567,35 @@ nav > [class*="menu"] {
 .menu-icon,
 #menu-phone {
   display: none;
+}
+
+.cover.gsap.relative.home {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 936px) {
+  .absolut-vodka > *:first-child {
+    transform: translate(10%, 0%);
+    scale: 1.5;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .absolut-vodka > *:first-child {
+    transform: translate(15%, 0%);
+    scale: 1.5;
+  }
+}
+
+@media screen and (max-width: 566px) {
+  .absolut-vodka > *:first-child {
+    transform: translate(25%, 0%);
+    scale: 1.5;
+  }
+
+  [class*=":l"] {
+    gap: var(--space-2);
+  }
 }
 
 @container header (width<=75ch) {
